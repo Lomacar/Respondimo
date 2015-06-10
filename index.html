@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            var date = new Date();
+            date.setTime(date.getTime() + (3000)); //3 second expiry
+            document.cookie = 'javascript=enabled; expires=' + date.toUTCString();
+            console.log(document.cookie)
+        </script>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+               
+        <style>
+            body, html {width: 100%;height: 100%;margin: 0;padding: 0;}
+            
+            h1 {font-size: 3em}
+            
+            .sneaky {
+                background-image: url('/SLIR/w100/img/rainbow.jpg?R');
+                background-size: 50%;
+                width: 100%;
+                height: 100%;
+            }
+            .sneaky.blob {
+                background-image: url('#/img/rainbow.jpg');
+            }
+            
+            .glob {
+/*                background-image: url('/SLIR/r.gif?i=/img/narf.jpg');*/
+            }
+        </style>
+        
+        <link rel="stylesheet" href="test2.css">
+        <link rel="stylesheet" href="test1.css">
+        
+    </head>
+    <body>
+       
+        <h1>ssdfgs</h1>
+        <div class="hey sneaky"></div>
+        <div class="hey blob"></div>
+        <img src="#/img/circles3.png?w=100" alt="">
+        <noscript class='bollocks'>
+        </noscript>
+        
+        <!--------------------->
+        
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="js/adap.js"></script>
+        <script>
+            var SLIR_DIR = 'SLIR';
+
+            function replaceImages(){
+                var url = $('.sneaky').css('backgroundImage').match(/\(["']?(.*)["']?\)/)[1]
+                //.replace(/url\(["']?(.*)["']?\)/,'$1')
+                //.replace(document.location.origin,'')
+                //.replace('/img/r.gif?','')
+                url = url.split('?')
+
+                var path = url[0]
+                var qs = url[1]
+
+                if (qs=='R') {
+                    var reg = new RegExp(document.location.origin + '\/' + SLIR_DIR + '\/[^/]+')
+                    path = path.replace( reg,'')
+                }
+                else path = qs
+
+                var width = $('.sneaky').width()
+
+                var bgsize = $('.sneaky').css('backgroundSize')
+                if (bgsize){
+                    switch(bgsize.replace(/\d/g,'')) {
+                        case '%' :
+                            width = Math.round( (width * parseInt(bgsize)) / 100 )
+                            break
+                            case 'px' :
+                            width = parseInt(bgsize)
+                            break
+                    }
+                }
+
+                $('.sneaky').css({'backgroundImage': 'url(/'+ SLIR_DIR +'/w' + width + path + ')' })
+            }
+
+            $(function(){
+                replaceImages()
+
+                $('.bollocks').replaceWith(function() {
+                    return this.textContent || this.innerText;
+                });
+                //$('body').prepend(url)
+                //$(window).resize(replaceImages)
+            })
+
+        </script>
+        
+    </body>
+</html>
