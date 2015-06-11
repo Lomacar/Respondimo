@@ -1,93 +1,98 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <script>
-            var date = new Date();
-            date.setTime(date.getTime() + (3000)); //3 second expiry
-            document.cookie = 'javascript=enabled; expires=' + date.toUTCString();
-            console.log(document.cookie)
-        </script>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="css/test.css">
                
         <style>
-            body, html {width: 100%;height: 100%;margin: 0;padding: 0;}
+            body, html {width: 100%; height: 100%; margin: 0; padding: 0;}
             
             h1 {font-size: 3em}
             
-            .sneaky {
-                background-image: url('/SLIR/w100/img/rainbow.jpg?R');
-                background-size: 50%;
-                width: 100%;
-                height: 100%;
-            }
-            .sneaky.blob {
-                background-image: url('#/img/rainbow.jpg');
+            .bg-test {
+                background: url('#/img/rainbow.jpg');
+                width: 15%;
+                padding-bottom:10%;
+/*                height: 300px;*/
+                display: inline-block;
+                margin-right: -1em;
             }
             
-            .glob {
-/*                background-image: url('/SLIR/r.gif?i=/img/narf.jpg');*/
-            }
         </style>
-        
-        <link rel="stylesheet" href="test2.css">
-        <link rel="stylesheet" href="test1.css">
         
     </head>
     <body>
        
-        <h1>ssdfgs</h1>
-        <div class="hey sneaky"></div>
-        <div class="hey blob"></div>
-        <img src="#/img/circles3.png?w=100" alt="">
+        <ul class="bg-test2">
+            <li>One</li>
+            <li>Two</li>
+            <li>Three</li>
+        </ul>
+        
+        
+        
+       <div>
+            <img src="#/img/circles3.png" width="100" data-adap-quality="90" alt="">
+            <div class="bg-test" data-adap-quality="95"></div>
+            <div id="dude" class="bg-test"></div>
+            <div></div>
+            <img src="#/img/circles3.png" width="500" height="300" data-adap-axis="y" data-adap-quality="90" alt="">
+            <div class="bg-test" data-adap-quality="95"></div>
+            <div class="bg-test"></div>
+        </div>
+        
+
+        
+        <img class="empty" width="500" src="" alt="" />
+        
         <noscript class='bollocks'>
         </noscript>
         
-        <!--------------------->
+        <!-- sdgsd -->
         
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script src="js/adap.js"></script>
+        <script src="js/respondimo.js"></script>
         <script>
-            var SLIR_DIR = 'SLIR';
 
-            function replaceImages(){
-                var url = $('.sneaky').css('backgroundImage').match(/\(["']?(.*)["']?\)/)[1]
-                //.replace(/url\(["']?(.*)["']?\)/,'$1')
-                //.replace(document.location.origin,'')
-                //.replace('/img/r.gif?','')
-                url = url.split('?')
-
-                var path = url[0]
-                var qs = url[1]
-
-                if (qs=='R') {
-                    var reg = new RegExp(document.location.origin + '\/' + SLIR_DIR + '\/[^/]+')
-                    path = path.replace( reg,'')
-                }
-                else path = qs
-
-                var width = $('.sneaky').width()
-
-                var bgsize = $('.sneaky').css('backgroundSize')
-                if (bgsize){
-                    switch(bgsize.replace(/\d/g,'')) {
-                        case '%' :
-                            width = Math.round( (width * parseInt(bgsize)) / 100 )
-                            break
-                            case 'px' :
-                            width = parseInt(bgsize)
-                            break
-                    }
-                }
-
-                $('.sneaky').css({'backgroundImage': 'url(/'+ SLIR_DIR +'/w' + width + path + ')' })
-            }
+//            function replaceImages(){
+//                var url = $('.sneaky').css('backgroundImage').match(/\(["']?(.*)["']?\)/)[1]
+//                //.replace(/url\(["']?(.*)["']?\)/,'$1')
+//                //.replace(document.location.origin,'')
+//                //.replace('/img/r.gif?','')
+//                url = url.split('?')
+//
+//                var path = url[0]
+//                var qs = url[1]
+//
+//                if (qs=='R') {
+//                    var reg = new RegExp(document.location.origin + '\/' + SLIR_DIR + '\/[^/]+')
+//                    path = path.replace( reg,'')
+//                }
+//                else path = qs
+//
+//                var width = $('.sneaky').width()
+//
+//                var bgsize = $('.sneaky').css('backgroundSize')
+//                if (bgsize){
+//                    switch(bgsize.replace(/\d/g,'')) {
+//                        case '%' :
+//                            width = Math.round( (width * parseInt(bgsize)) / 100 )
+//                            break
+//                            case 'px' :
+//                            width = parseInt(bgsize)
+//                            break
+//                    }
+//                }
+//
+//                $('.sneaky').css({'backgroundImage': 'url(/'+ SLIR_DIR +'/w' + width + path + ')' })
+//            }
 
             $(function(){
-                replaceImages()
+                //replaceImages()
 
                 $('.bollocks').replaceWith(function() {
                     return this.textContent || this.innerText;

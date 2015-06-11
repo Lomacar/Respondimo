@@ -1365,3 +1365,95 @@ REQUEST: localhost/SLIR/w532/img/rainbow.jpg
 #5 M:\Web\Adap\SLIR\index.php(30): SLIR->processRequestFromURL()
 #6 M:\Web\Adap\routing.php(22): include_once('M:\\Web\\Adap\\SLI...')
 #7 {main}
+[Wed Jun 10 22:08:47 2015] [127.0.0.1 Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.81 Safari/537.36] Width must be greater than 0: 0
+
+REFERRER: http://localhost:9876/
+
+REQUEST: localhost/SLIR/w=100&i=/img/McLarenF1_3.jpg
+
+#0 M:\Web\Respondimo\SLIR\core\slirrequest.class.php(175): SLIRRequest->setWidth('=100&i=')
+#1 M:\Web\Respondimo\SLIR\core\slirrequest.class.php(136): SLIRRequest->__set('w', '=100&i=')
+#2 M:\Web\Respondimo\SLIR\core\slir.class.php(286): SLIRRequest->initialize()
+#3 M:\Web\Respondimo\SLIR\core\slir.class.php(444): SLIR->getRequest()
+#4 M:\Web\Respondimo\SLIR\core\slir.class.php(257): SLIR->shouldUseRequestCache()
+#5 M:\Web\Respondimo\SLIR\index.php(30): SLIR->processRequestFromURL()
+#6 M:\Web\Respondimo\routing.php(34): include_once('M:\\Web\\Respondi...')
+#7 {main}
+[Wed Jun 10 22:08:47 2015] [127.0.0.1 Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.81 Safari/537.36] Width must be greater than 0: 0
+
+REFERRER: http://localhost:9876/
+
+REQUEST: localhost/SLIR/w=100&i=/img/64bit.png
+
+#0 M:\Web\Respondimo\SLIR\core\slirrequest.class.php(175): SLIRRequest->setWidth('=100&i=')
+#1 M:\Web\Respondimo\SLIR\core\slirrequest.class.php(136): SLIRRequest->__set('w', '=100&i=')
+#2 M:\Web\Respondimo\SLIR\core\slir.class.php(286): SLIRRequest->initialize()
+#3 M:\Web\Respondimo\SLIR\core\slir.class.php(444): SLIR->getRequest()
+#4 M:\Web\Respondimo\SLIR\core\slir.class.php(257): SLIR->shouldUseRequestCache()
+#5 M:\Web\Respondimo\SLIR\index.php(30): SLIR->processRequestFromURL()
+#6 M:\Web\Respondimo\routing.php(34): include_once('M:\\Web\\Respondi...')
+#7 {main}
+[Wed Jun 10 22:08:47 2015] [127.0.0.1 Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.81 Safari/537.36] Width must be greater than 0: 0
+
+REFERRER: http://localhost:9876/
+
+REQUEST: localhost/SLIR/w=100&i=/img/rainbow.jpg
+
+#0 M:\Web\Respondimo\SLIR\core\slirrequest.class.php(175): SLIRRequest->setWidth('=100&i=')
+#1 M:\Web\Respondimo\SLIR\core\slirrequest.class.php(136): SLIRRequest->__set('w', '=100&i=')
+#2 M:\Web\Respondimo\SLIR\core\slir.class.php(286): SLIRRequest->initialize()
+#3 M:\Web\Respondimo\SLIR\core\slir.class.php(444): SLIR->getRequest()
+#4 M:\Web\Respondimo\SLIR\core\slir.class.php(257): SLIR->shouldUseRequestCache()
+#5 M:\Web\Respondimo\SLIR\index.php(30): SLIR->processRequestFromURL()
+#6 M:\Web\Respondimo\routing.php(34): include_once('M:\\Web\\Respondi...')
+#7 {main}
+[Wed Jun 10 22:09:06 2015] [127.0.0.1 Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.81 Safari/537.36] Width must be greater than 0: 0
+
+REFERRER: http://localhost:9876/
+
+REQUEST: localhost/SLIR/w=100&i=/img/McLarenF1_3.jpg
+
+#0 M:\Web\Respondimo\SLIR\core\slirrequest.class.php(175): SLIRRequest->setWidth('=100&i=')
+#1 M:\Web\Respondimo\SLIR\core\slirrequest.class.php(136): SLIRRequest->__set('w', '=100&i=')
+#2 M:\Web\Respondimo\SLIR\core\slir.class.php(286): SLIRRequest->initialize()
+#3 M:\Web\Respondimo\SLIR\core\slir.class.php(444): SLIR->getRequest()
+#4 M:\Web\Respondimo\SLIR\core\slir.class.php(257): SLIR->shouldUseRequestCache()
+#5 M:\Web\Respondimo\SLIR\index.php(30): SLIR->processRequestFromURL()
+#6 M:\Web\Respondimo\routing.php(34): include_once('M:\\Web\\Respondi...')
+#7 {main}
+[Wed Jun 10 22:09:06 2015] [127.0.0.1 Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.81 Safari/537.36] Width must be greater than 0: 0
+
+REFERRER: http://localhost:9876/
+
+REQUEST: localhost/SLIR/w=100&i=/img/rainbow.jpg
+
+#0 M:\Web\Respondimo\SLIR\core\slirrequest.class.php(175): SLIRRequest->setWidth('=100&i=')
+#1 M:\Web\Respondimo\SLIR\core\slirrequest.class.php(136): SLIRRequest->__set('w', '=100&i=')
+#2 M:\Web\Respondimo\SLIR\core\slir.class.php(286): SLIRRequest->initialize()
+#3 M:\Web\Respondimo\SLIR\core\slir.class.php(444): SLIR->getRequest()
+#4 M:\Web\Respondimo\SLIR\core\slir.class.php(257): SLIR->shouldUseRequestCache()
+#5 M:\Web\Respondimo\SLIR\index.php(30): SLIR->processRequestFromURL()
+#6 M:\Web\Respondimo\routing.php(34): include_once('M:\\Web\\Respondi...')
+#7 {main}
+[Wed Jun 10 22:09:06 2015] [127.0.0.1 Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.81 Safari/537.36] Width must be greater than 0: 0
+
+REFERRER: http://localhost:9876/
+
+REQUEST: localhost/SLIR/w=100&i=/img/64bit.png
+
+#0 M:\Web\Respondimo\SLIR\core\slirrequest.class.php(175): SLIRRequest->setWidth('=100&i=')
+#1 M:\Web\Respondimo\SLIR\core\slirrequest.class.php(136): SLIRRequest->__set('w', '=100&i=')
+#2 M:\Web\Respondimo\SLIR\core\slir.class.php(286): SLIRRequest->initialize()
+#3 M:\Web\Respondimo\SLIR\core\slir.class.php(444): SLIR->getRequest()
+#4 M:\Web\Respondimo\SLIR\core\slir.class.php(257): SLIR->shouldUseRequestCache()
+#5 M:\Web\Respondimo\SLIR\index.php(30): SLIR->processRequestFromURL()
+#6 M:\Web\Respondimo\routing.php(34): include_once('M:\\Web\\Respondi...')
+#7 {main}
+[Thu Jun 11 01:28:31 2015] Garbage collection started
+[Thu Jun 11 01:28:33 2015] Garbage collection completed
+[Thu Jun 11 04:51:48 2015] Garbage collection started
+[Thu Jun 11 04:51:50 2015] Garbage collection completed
+[Thu Jun 11 08:52:19 2015] Garbage collection started
+[Thu Jun 11 08:52:21 2015] Garbage collection completed
+[Thu Jun 11 16:22:20 2015] Garbage collection started
+[Thu Jun 11 16:22:22 2015] Garbage collection completed

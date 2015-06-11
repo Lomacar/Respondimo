@@ -1,0 +1,16 @@
+.bg-test2 {
+    background-image: url('#/img/McLarenF1_3.jpg')/*, url(#/img/64bit.png)*/
+}
+
+[class^=bg-] {
+    background-size: cover !important;
+    color: white;
+    text-shadow: 1px 1px black;
+    padding: 1em 1em;
+}
+
+img {
+    max-width: 100%;
+    max-height: auto;
+    /*height: auto;*/
+}
