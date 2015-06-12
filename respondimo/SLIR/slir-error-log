@@ -1457,3 +1457,422 @@ REQUEST: localhost/SLIR/w=100&i=/img/64bit.png
 [Thu Jun 11 08:52:21 2015] Garbage collection completed
 [Thu Jun 11 16:22:20 2015] Garbage collection started
 [Thu Jun 11 16:22:22 2015] Garbage collection completed
+[Thu Jun 11 18:32:54 2015] [127.0.0.1 Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.81 Safari/537.36] getimagesize failed (source file may not be an image): M:\Web\Respondimo/css/test.css
+
+REFERRER: http://localhost:9876/
+
+REQUEST: 0.0.0.0/respondimo/SLIR/?q=90&w=960&i=http://localhost:9876/css/test.css
+
+#0 M:\Web\Respondimo\respondimo\SLIR\core\libs\slirimage.class.php(421): SLIRGDImage->getInfo('width')
+#1 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(305): SLIRImage->getWidth()
+#2 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(717): SLIR->getSource()
+#3 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(702): SLIR->isWidthDifferent()
+#4 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(262): SLIR->isSourceImageDesired()
+#5 M:\Web\Respondimo\respondimo\SLIR\index.php(30): SLIR->processRequestFromURL()
+#6 {main}
+[Thu Jun 11 18:32:54 2015] [127.0.0.1 Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.81 Safari/537.36] Image does not exist: M:\Web\Respondimo/
+
+REFERRER: http://localhost:9876/
+
+REQUEST: 0.0.0.0/respondimo/SLIR/?q=95&w=180&i=http://localhost:9876/
+
+#0 M:\Web\Respondimo\respondimo\SLIR\core\slirrequest.class.php(170): SLIRRequest->setPath('http://localhos...')
+#1 M:\Web\Respondimo\respondimo\SLIR\core\slirrequest.class.php(126): SLIRRequest->__set('i', 'http://localhos...')
+#2 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(286): SLIRRequest->initialize()
+#3 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(444): SLIR->getRequest()
+#4 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(257): SLIR->shouldUseRequestCache()
+#5 M:\Web\Respondimo\respondimo\SLIR\index.php(30): SLIR->processRequestFromURL()
+#6 {main}
+[Thu Jun 11 18:32:54 2015] [127.0.0.1 Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.81 Safari/537.36] Image does not exist: M:\Web\Respondimo/
+
+REFERRER: http://localhost:9876/
+
+REQUEST: 0.0.0.0/respondimo/SLIR/?q=90&w=180&i=http://localhost:9876/
+
+#0 M:\Web\Respondimo\respondimo\SLIR\core\slirrequest.class.php(170): SLIRRequest->setPath('http://localhos...')
+#1 M:\Web\Respondimo\respondimo\SLIR\core\slirrequest.class.php(126): SLIRRequest->__set('i', 'http://localhos...')
+#2 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(286): SLIRRequest->initialize()
+#3 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(444): SLIR->getRequest()
+#4 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(257): SLIR->shouldUseRequestCache()
+#5 M:\Web\Respondimo\respondimo\SLIR\index.php(30): SLIR->processRequestFromURL()
+#6 {main}
+[Thu Jun 11 18:33:00 2015] [127.0.0.1 Mozilla/5.0 (Windows NT 6.1; WOW64; rv:38.0) Gecko/20100101 Firefox/38.0] Source image was not specified.
+
+REFERRER: http://localhost:9876/
+
+REQUEST: 0.0.0.0/respondimo/SLIR/?q=90&w=960&i=
+
+#0 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(286): SLIRRequest->initialize()
+#1 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(444): SLIR->getRequest()
+#2 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(257): SLIR->shouldUseRequestCache()
+#3 M:\Web\Respondimo\respondimo\SLIR\index.php(30): SLIR->processRequestFromURL()
+#4 {main}
+[Thu Jun 11 18:33:00 2015] [127.0.0.1 Mozilla/5.0 (Windows NT 6.1; WOW64; rv:38.0) Gecko/20100101 Firefox/38.0] Source image was not specified.
+
+REFERRER: http://localhost:9876/
+
+REQUEST: 0.0.0.0/respondimo/SLIR/?q=95&w=160&i=
+
+#0 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(286): SLIRRequest->initialize()
+#1 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(444): SLIR->getRequest()
+#2 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(257): SLIR->shouldUseRequestCache()
+#3 M:\Web\Respondimo\respondimo\SLIR\index.php(30): SLIR->processRequestFromURL()
+#4 {main}
+[Thu Jun 11 18:33:00 2015] [127.0.0.1 Mozilla/5.0 (Windows NT 6.1; WOW64; rv:38.0) Gecko/20100101 Firefox/38.0] Source image was not specified.
+
+REFERRER: http://localhost:9876/
+
+REQUEST: 0.0.0.0/respondimo/SLIR/?q=90&w=160&i=
+
+#0 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(286): SLIRRequest->initialize()
+#1 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(444): SLIR->getRequest()
+#2 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(257): SLIR->shouldUseRequestCache()
+#3 M:\Web\Respondimo\respondimo\SLIR\index.php(30): SLIR->processRequestFromURL()
+#4 {main}
+[Thu Jun 11 18:33:01 2015] [127.0.0.1 Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.81 Safari/537.36] getimagesize failed (source file may not be an image): M:\Web\Respondimo/css/test.css
+
+REFERRER: http://localhost:9876/
+
+REQUEST: 0.0.0.0/respondimo/SLIR/?q=90&w=960&i=http://localhost:9876/css/test.css
+
+#0 M:\Web\Respondimo\respondimo\SLIR\core\libs\slirimage.class.php(421): SLIRGDImage->getInfo('width')
+#1 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(305): SLIRImage->getWidth()
+#2 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(717): SLIR->getSource()
+#3 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(702): SLIR->isWidthDifferent()
+#4 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(262): SLIR->isSourceImageDesired()
+#5 M:\Web\Respondimo\respondimo\SLIR\index.php(30): SLIR->processRequestFromURL()
+#6 {main}
+[Thu Jun 11 18:33:01 2015] [127.0.0.1 Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.81 Safari/537.36] Image does not exist: M:\Web\Respondimo/
+
+REFERRER: http://localhost:9876/
+
+REQUEST: 0.0.0.0/respondimo/SLIR/?q=95&w=180&i=http://localhost:9876/
+
+#0 M:\Web\Respondimo\respondimo\SLIR\core\slirrequest.class.php(170): SLIRRequest->setPath('http://localhos...')
+#1 M:\Web\Respondimo\respondimo\SLIR\core\slirrequest.class.php(126): SLIRRequest->__set('i', 'http://localhos...')
+#2 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(286): SLIRRequest->initialize()
+#3 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(444): SLIR->getRequest()
+#4 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(257): SLIR->shouldUseRequestCache()
+#5 M:\Web\Respondimo\respondimo\SLIR\index.php(30): SLIR->processRequestFromURL()
+#6 {main}
+[Thu Jun 11 18:33:01 2015] [127.0.0.1 Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.81 Safari/537.36] Image does not exist: M:\Web\Respondimo/
+
+REFERRER: http://localhost:9876/
+
+REQUEST: 0.0.0.0/respondimo/SLIR/?q=90&w=180&i=http://localhost:9876/
+
+#0 M:\Web\Respondimo\respondimo\SLIR\core\slirrequest.class.php(170): SLIRRequest->setPath('http://localhos...')
+#1 M:\Web\Respondimo\respondimo\SLIR\core\slirrequest.class.php(126): SLIRRequest->__set('i', 'http://localhos...')
+#2 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(286): SLIRRequest->initialize()
+#3 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(444): SLIR->getRequest()
+#4 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(257): SLIR->shouldUseRequestCache()
+#5 M:\Web\Respondimo\respondimo\SLIR\index.php(30): SLIR->processRequestFromURL()
+#6 {main}
+[Thu Jun 11 18:33:11 2015] [127.0.0.1 Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; WOW64; Trident/6.0)] Source image was not specified.
+
+REFERRER: http://localhost:9876/
+
+REQUEST: 0.0.0.0/respondimo/SLIR/?q=90&w=320&i=
+
+#0 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(286): SLIRRequest->initialize()
+#1 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(444): SLIR->getRequest()
+#2 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(257): SLIR->shouldUseRequestCache()
+#3 M:\Web\Respondimo\respondimo\SLIR\index.php(30): SLIR->processRequestFromURL()
+#4 {main}
+[Thu Jun 11 18:33:11 2015] [127.0.0.1 Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; WOW64; Trident/6.0)] Source image was not specified.
+
+REFERRER: http://localhost:9876/
+
+REQUEST: 0.0.0.0/respondimo/SLIR/?q=95&w=320&i=
+
+#0 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(286): SLIRRequest->initialize()
+#1 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(444): SLIR->getRequest()
+#2 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(257): SLIR->shouldUseRequestCache()
+#3 M:\Web\Respondimo\respondimo\SLIR\index.php(30): SLIR->processRequestFromURL()
+#4 {main}
+[Thu Jun 11 18:33:11 2015] [127.0.0.1 Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.1; WOW64; Trident/6.0)] Source image was not specified.
+
+REFERRER: http://localhost:9876/
+
+REQUEST: 0.0.0.0/respondimo/SLIR/?q=90&w=1920&i=
+
+#0 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(286): SLIRRequest->initialize()
+#1 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(444): SLIR->getRequest()
+#2 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(257): SLIR->shouldUseRequestCache()
+#3 M:\Web\Respondimo\respondimo\SLIR\index.php(30): SLIR->processRequestFromURL()
+#4 {main}
+[Thu Jun 11 18:33:11 2015] [127.0.0.1 Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.81 Safari/537.36] getimagesize failed (source file may not be an image): M:\Web\Respondimo/css/test.css
+
+REFERRER: http://localhost:9876/
+
+REQUEST: 0.0.0.0/respondimo/SLIR/?q=90&w=960&i=http://localhost:9876/css/test.css
+
+#0 M:\Web\Respondimo\respondimo\SLIR\core\libs\slirimage.class.php(421): SLIRGDImage->getInfo('width')
+#1 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(305): SLIRImage->getWidth()
+#2 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(717): SLIR->getSource()
+#3 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(702): SLIR->isWidthDifferent()
+#4 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(262): SLIR->isSourceImageDesired()
+#5 M:\Web\Respondimo\respondimo\SLIR\index.php(30): SLIR->processRequestFromURL()
+#6 {main}
+[Thu Jun 11 18:33:11 2015] [127.0.0.1 Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.81 Safari/537.36] Image does not exist: M:\Web\Respondimo/
+
+REFERRER: http://localhost:9876/
+
+REQUEST: 0.0.0.0/respondimo/SLIR/?q=95&w=180&i=http://localhost:9876/
+
+#0 M:\Web\Respondimo\respondimo\SLIR\core\slirrequest.class.php(170): SLIRRequest->setPath('http://localhos...')
+#1 M:\Web\Respondimo\respondimo\SLIR\core\slirrequest.class.php(126): SLIRRequest->__set('i', 'http://localhos...')
+#2 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(286): SLIRRequest->initialize()
+#3 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(444): SLIR->getRequest()
+#4 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(257): SLIR->shouldUseRequestCache()
+#5 M:\Web\Respondimo\respondimo\SLIR\index.php(30): SLIR->processRequestFromURL()
+#6 {main}
+[Thu Jun 11 18:33:11 2015] [127.0.0.1 Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.81 Safari/537.36] Image does not exist: M:\Web\Respondimo/
+
+REFERRER: http://localhost:9876/
+
+REQUEST: 0.0.0.0/respondimo/SLIR/?q=90&w=180&i=http://localhost:9876/
+
+#0 M:\Web\Respondimo\respondimo\SLIR\core\slirrequest.class.php(170): SLIRRequest->setPath('http://localhos...')
+#1 M:\Web\Respondimo\respondimo\SLIR\core\slirrequest.class.php(126): SLIRRequest->__set('i', 'http://localhos...')
+#2 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(286): SLIRRequest->initialize()
+#3 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(444): SLIR->getRequest()
+#4 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(257): SLIR->shouldUseRequestCache()
+#5 M:\Web\Respondimo\respondimo\SLIR\index.php(30): SLIR->processRequestFromURL()
+#6 {main}
+[Thu Jun 11 18:33:27 2015] [127.0.0.1 Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.81 Safari/537.36] getimagesize failed (source file may not be an image): M:\Web\Respondimo/css/test.css
+
+REFERRER: http://localhost:9876/
+
+REQUEST: 0.0.0.0/respondimo/SLIR/?q=90&w=960&i=http://localhost:9876/css/test.css
+
+#0 M:\Web\Respondimo\respondimo\SLIR\core\libs\slirimage.class.php(421): SLIRGDImage->getInfo('width')
+#1 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(305): SLIRImage->getWidth()
+#2 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(717): SLIR->getSource()
+#3 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(702): SLIR->isWidthDifferent()
+#4 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(262): SLIR->isSourceImageDesired()
+#5 M:\Web\Respondimo\respondimo\SLIR\index.php(30): SLIR->processRequestFromURL()
+#6 {main}
+[Thu Jun 11 18:33:27 2015] [127.0.0.1 Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.81 Safari/537.36] Image does not exist: M:\Web\Respondimo/
+
+REFERRER: http://localhost:9876/
+
+REQUEST: 0.0.0.0/respondimo/SLIR/?q=95&w=180&i=http://localhost:9876/
+
+#0 M:\Web\Respondimo\respondimo\SLIR\core\slirrequest.class.php(170): SLIRRequest->setPath('http://localhos...')
+#1 M:\Web\Respondimo\respondimo\SLIR\core\slirrequest.class.php(126): SLIRRequest->__set('i', 'http://localhos...')
+#2 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(286): SLIRRequest->initialize()
+#3 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(444): SLIR->getRequest()
+#4 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(257): SLIR->shouldUseRequestCache()
+#5 M:\Web\Respondimo\respondimo\SLIR\index.php(30): SLIR->processRequestFromURL()
+#6 {main}
+[Thu Jun 11 18:33:27 2015] [127.0.0.1 Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.81 Safari/537.36] Image does not exist: M:\Web\Respondimo/
+
+REFERRER: http://localhost:9876/
+
+REQUEST: 0.0.0.0/respondimo/SLIR/?q=90&w=180&i=http://localhost:9876/
+
+#0 M:\Web\Respondimo\respondimo\SLIR\core\slirrequest.class.php(170): SLIRRequest->setPath('http://localhos...')
+#1 M:\Web\Respondimo\respondimo\SLIR\core\slirrequest.class.php(126): SLIRRequest->__set('i', 'http://localhos...')
+#2 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(286): SLIRRequest->initialize()
+#3 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(444): SLIR->getRequest()
+#4 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(257): SLIR->shouldUseRequestCache()
+#5 M:\Web\Respondimo\respondimo\SLIR\index.php(30): SLIR->processRequestFromURL()
+#6 {main}
+[Thu Jun 11 18:33:28 2015] [127.0.0.1 Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.81 Safari/537.36] getimagesize failed (source file may not be an image): M:\Web\Respondimo/css/test.css
+
+REFERRER: http://localhost:9876/
+
+REQUEST: 0.0.0.0/respondimo/SLIR/?q=90&w=960&i=http://localhost:9876/css/test.css
+
+#0 M:\Web\Respondimo\respondimo\SLIR\core\libs\slirimage.class.php(421): SLIRGDImage->getInfo('width')
+#1 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(305): SLIRImage->getWidth()
+#2 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(717): SLIR->getSource()
+#3 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(702): SLIR->isWidthDifferent()
+#4 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(262): SLIR->isSourceImageDesired()
+#5 M:\Web\Respondimo\respondimo\SLIR\index.php(30): SLIR->processRequestFromURL()
+#6 {main}
+[Thu Jun 11 18:33:28 2015] [127.0.0.1 Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.81 Safari/537.36] Image does not exist: M:\Web\Respondimo/
+
+REFERRER: http://localhost:9876/
+
+REQUEST: 0.0.0.0/respondimo/SLIR/?q=95&w=180&i=http://localhost:9876/
+
+#0 M:\Web\Respondimo\respondimo\SLIR\core\slirrequest.class.php(170): SLIRRequest->setPath('http://localhos...')
+#1 M:\Web\Respondimo\respondimo\SLIR\core\slirrequest.class.php(126): SLIRRequest->__set('i', 'http://localhos...')
+#2 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(286): SLIRRequest->initialize()
+#3 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(444): SLIR->getRequest()
+#4 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(257): SLIR->shouldUseRequestCache()
+#5 M:\Web\Respondimo\respondimo\SLIR\index.php(30): SLIR->processRequestFromURL()
+#6 {main}
+[Thu Jun 11 18:33:28 2015] [127.0.0.1 Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.81 Safari/537.36] Image does not exist: M:\Web\Respondimo/
+
+REFERRER: http://localhost:9876/
+
+REQUEST: 0.0.0.0/respondimo/SLIR/?q=90&w=180&i=http://localhost:9876/
+
+#0 M:\Web\Respondimo\respondimo\SLIR\core\slirrequest.class.php(170): SLIRRequest->setPath('http://localhos...')
+#1 M:\Web\Respondimo\respondimo\SLIR\core\slirrequest.class.php(126): SLIRRequest->__set('i', 'http://localhos...')
+#2 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(286): SLIRRequest->initialize()
+#3 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(444): SLIR->getRequest()
+#4 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(257): SLIR->shouldUseRequestCache()
+#5 M:\Web\Respondimo\respondimo\SLIR\index.php(30): SLIR->processRequestFromURL()
+#6 {main}
+[Thu Jun 11 18:34:32 2015] [127.0.0.1 Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.81 Safari/537.36] getimagesize failed (source file may not be an image): M:\Web\Respondimo/css/test.css
+
+REFERRER: http://localhost:9876/
+
+REQUEST: 0.0.0.0/respondimo/SLIR/?q=90&w=960&i=http://localhost:9876/css/test.css
+
+#0 M:\Web\Respondimo\respondimo\SLIR\core\libs\slirimage.class.php(421): SLIRGDImage->getInfo('width')
+#1 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(305): SLIRImage->getWidth()
+#2 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(717): SLIR->getSource()
+#3 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(702): SLIR->isWidthDifferent()
+#4 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(262): SLIR->isSourceImageDesired()
+#5 M:\Web\Respondimo\respondimo\SLIR\index.php(30): SLIR->processRequestFromURL()
+#6 {main}
+[Thu Jun 11 18:34:32 2015] [127.0.0.1 Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.81 Safari/537.36] Image does not exist: M:\Web\Respondimo/
+
+REFERRER: http://localhost:9876/
+
+REQUEST: 0.0.0.0/respondimo/SLIR/?q=95&w=180&i=http://localhost:9876/
+
+#0 M:\Web\Respondimo\respondimo\SLIR\core\slirrequest.class.php(170): SLIRRequest->setPath('http://localhos...')
+#1 M:\Web\Respondimo\respondimo\SLIR\core\slirrequest.class.php(126): SLIRRequest->__set('i', 'http://localhos...')
+#2 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(286): SLIRRequest->initialize()
+#3 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(444): SLIR->getRequest()
+#4 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(257): SLIR->shouldUseRequestCache()
+#5 M:\Web\Respondimo\respondimo\SLIR\index.php(30): SLIR->processRequestFromURL()
+#6 {main}
+[Thu Jun 11 18:34:32 2015] [127.0.0.1 Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.81 Safari/537.36] Image does not exist: M:\Web\Respondimo/
+
+REFERRER: http://localhost:9876/
+
+REQUEST: 0.0.0.0/respondimo/SLIR/?q=90&w=180&i=http://localhost:9876/
+
+#0 M:\Web\Respondimo\respondimo\SLIR\core\slirrequest.class.php(170): SLIRRequest->setPath('http://localhos...')
+#1 M:\Web\Respondimo\respondimo\SLIR\core\slirrequest.class.php(126): SLIRRequest->__set('i', 'http://localhos...')
+#2 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(286): SLIRRequest->initialize()
+#3 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(444): SLIR->getRequest()
+#4 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(257): SLIR->shouldUseRequestCache()
+#5 M:\Web\Respondimo\respondimo\SLIR\index.php(30): SLIR->processRequestFromURL()
+#6 {main}
+[Thu Jun 11 18:35:34 2015] [127.0.0.1 Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.81 Safari/537.36] Image does not exist: M:\Web\Respondimo/
+
+REFERRER: http://localhost:9876/
+
+REQUEST: 0.0.0.0/respondimo/SLIR/?q=95&w=180&i=http://localhost:9876/
+
+#0 M:\Web\Respondimo\respondimo\SLIR\core\slirrequest.class.php(170): SLIRRequest->setPath('http://localhos...')
+#1 M:\Web\Respondimo\respondimo\SLIR\core\slirrequest.class.php(126): SLIRRequest->__set('i', 'http://localhos...')
+#2 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(286): SLIRRequest->initialize()
+#3 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(444): SLIR->getRequest()
+#4 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(257): SLIR->shouldUseRequestCache()
+#5 M:\Web\Respondimo\respondimo\SLIR\index.php(30): SLIR->processRequestFromURL()
+#6 {main}
+[Thu Jun 11 18:35:34 2015] [127.0.0.1 Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.81 Safari/537.36] getimagesize failed (source file may not be an image): M:\Web\Respondimo/css/test.css
+
+REFERRER: http://localhost:9876/
+
+REQUEST: 0.0.0.0/respondimo/SLIR/?q=90&w=960&i=http://localhost:9876/css/test.css
+
+#0 M:\Web\Respondimo\respondimo\SLIR\core\libs\slirimage.class.php(421): SLIRGDImage->getInfo('width')
+#1 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(305): SLIRImage->getWidth()
+#2 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(717): SLIR->getSource()
+#3 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(702): SLIR->isWidthDifferent()
+#4 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(262): SLIR->isSourceImageDesired()
+#5 M:\Web\Respondimo\respondimo\SLIR\index.php(30): SLIR->processRequestFromURL()
+#6 {main}
+[Thu Jun 11 18:35:34 2015] [127.0.0.1 Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.81 Safari/537.36] Image does not exist: M:\Web\Respondimo/
+
+REFERRER: http://localhost:9876/
+
+REQUEST: 0.0.0.0/respondimo/SLIR/?q=90&w=180&i=http://localhost:9876/
+
+#0 M:\Web\Respondimo\respondimo\SLIR\core\slirrequest.class.php(170): SLIRRequest->setPath('http://localhos...')
+#1 M:\Web\Respondimo\respondimo\SLIR\core\slirrequest.class.php(126): SLIRRequest->__set('i', 'http://localhos...')
+#2 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(286): SLIRRequest->initialize()
+#3 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(444): SLIR->getRequest()
+#4 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(257): SLIR->shouldUseRequestCache()
+#5 M:\Web\Respondimo\respondimo\SLIR\index.php(30): SLIR->processRequestFromURL()
+#6 {main}
+[Thu Jun 11 19:26:57 2015] [127.0.0.1 Mozilla/5.0 (Windows NT 6.1; WOW64; rv:38.0) Gecko/20100101 Firefox/38.0] Not enough parameters were given.
+
+Available parameters:
+ w = Maximum width
+ h = Maximum height
+ c = Crop ratio (width.height(.cropper?))
+ q = Quality (0-100)
+ b = Background fill color (RRGGBB or RGB)
+ p = Progressive (0 or 1)
+
+Example usage:
+/slir/w300-h300-c1.1/path/to/image.jpg
+
+REFERRER: 
+
+REQUEST: 0.0.0.0/respondimo/SLIR/?size=auto%20auto
+
+#0 M:\Web\Respondimo\respondimo\SLIR\core\slirrequest.class.php(318): SLIRRequest->getParametersFromURL()
+#1 M:\Web\Respondimo\respondimo\SLIR\core\slirrequest.class.php(122): SLIRRequest->getParameters()
+#2 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(286): SLIRRequest->initialize()
+#3 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(444): SLIR->getRequest()
+#4 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(257): SLIR->shouldUseRequestCache()
+#5 M:\Web\Respondimo\respondimo\SLIR\index.php(30): SLIR->processRequestFromURL()
+#6 {main}
+[Thu Jun 11 19:26:58 2015] [127.0.0.1 Mozilla/5.0 (Windows NT 6.1; WOW64; rv:38.0) Gecko/20100101 Firefox/38.0] Not enough parameters were given.
+
+Available parameters:
+ w = Maximum width
+ h = Maximum height
+ c = Crop ratio (width.height(.cropper?))
+ q = Quality (0-100)
+ b = Background fill color (RRGGBB or RGB)
+ p = Progressive (0 or 1)
+
+Example usage:
+/slir/w300-h300-c1.1/path/to/image.jpg
+
+REFERRER: 
+
+REQUEST: 0.0.0.0/respondimo/SLIR/?size=auto%20auto
+
+#0 M:\Web\Respondimo\respondimo\SLIR\core\slirrequest.class.php(318): SLIRRequest->getParametersFromURL()
+#1 M:\Web\Respondimo\respondimo\SLIR\core\slirrequest.class.php(122): SLIRRequest->getParameters()
+#2 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(286): SLIRRequest->initialize()
+#3 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(444): SLIR->getRequest()
+#4 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(257): SLIR->shouldUseRequestCache()
+#5 M:\Web\Respondimo\respondimo\SLIR\index.php(30): SLIR->processRequestFromURL()
+#6 {main}
+[Thu Jun 11 19:29:13 2015] Garbage collection started
+[Thu Jun 11 19:29:15 2015] Garbage collection completed
+[Thu Jun 11 19:39:03 2015] Garbage collection started
+[Thu Jun 11 19:39:05 2015] Garbage collection completed
+[Thu Jun 11 20:04:26 2015] [127.0.0.1 Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.81 Safari/537.36] Image does not exist: M:\Web\Respondimo/img/circle3.png
+
+REFERRER: http://localhost:9876/
+
+REQUEST: 0.0.0.0/respondimo/SLIR/?q=90&h=960&size=contain&i=/img/circle3.png
+
+#0 M:\Web\Respondimo\respondimo\SLIR\core\slirrequest.class.php(170): SLIRRequest->setPath('/img/circle3.pn...')
+#1 M:\Web\Respondimo\respondimo\SLIR\core\slirrequest.class.php(126): SLIRRequest->__set('i', '/img/circle3.pn...')
+#2 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(286): SLIRRequest->initialize()
+#3 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(444): SLIR->getRequest()
+#4 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(257): SLIR->shouldUseRequestCache()
+#5 M:\Web\Respondimo\respondimo\SLIR\index.php(30): SLIR->processRequestFromURL()
+#6 {main}
+[Thu Jun 11 20:04:27 2015] [127.0.0.1 Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.81 Safari/537.36] Image does not exist: M:\Web\Respondimo/img/circle3.png
+
+REFERRER: http://localhost:9876/
+
+REQUEST: 0.0.0.0/respondimo/SLIR/?q=90&h=960&size=contain&i=/img/circle3.png
+
+#0 M:\Web\Respondimo\respondimo\SLIR\core\slirrequest.class.php(170): SLIRRequest->setPath('/img/circle3.pn...')
+#1 M:\Web\Respondimo\respondimo\SLIR\core\slirrequest.class.php(126): SLIRRequest->__set('i', '/img/circle3.pn...')
+#2 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(286): SLIRRequest->initialize()
+#3 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(444): SLIR->getRequest()
+#4 M:\Web\Respondimo\respondimo\SLIR\core\slir.class.php(257): SLIR->shouldUseRequestCache()
+#5 M:\Web\Respondimo\respondimo\SLIR\index.php(30): SLIR->processRequestFromURL()
+#6 {main}
+[Fri Jun 12 01:54:08 2015] Garbage collection started
+[Fri Jun 12 01:54:10 2015] Garbage collection completed
