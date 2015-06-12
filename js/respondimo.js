@@ -35,42 +35,52 @@
 
     })
     
-    // Fancy trickery for every img in a .respondimo noscript tag.
-   $('.respondimo').each(function () {
-
-        
-        $('.respondimo').replaceWith(function() {
-            return (this.textContent || this.innerText).replace(/src=(["'])/,'src=$1#');
-        });
-        
-    })
+    // Fancy trickery for every img in a .respondimo noscript tag.      
+    $('noscript.respondimo').replaceWith(function() {
+        return (this.textContent || this.innerText).replace(/src=(["'])/,'src=$1#');
+    });       
 
     // For every img tag with '#' in the src URL, do the thing.
     $('img[src*=#]').each(function () {
         var url = $(this).attr('src').replace(/.*?#(.+)/g,'$1');
         respondimo($(this), url, false);
     })
-//    $('.respondimo').each(function () {
-//        //get stuff inside noscript
-//        var innards = $(this).html();
-//        
-//        //get img elements and convert them to br so images aren't fetched
-//        var html = $.parseHTML(htmlDecode(innards).replace(/<img/gi,"<br"))
-//        
-//        //find images among contents
-//        $.each(html, function(){     
-////            console.log(this);
-//            if(this.tagName=='BR') console.log(this.outerHTML);
-//        })
-//    })
-    //htmlDecode($('.respondimo').html()).trim().replace(/(.*src=["'])(.*?)(["'].*)/,'$2')
     
     //////////////////////////////////////////////////////////////
     // Takes an HTML element and a url                          //
     // changes that elements src or backgroundImage             //
     // to an imaged based on the URL with the ideal dimensions. //
     //////////////////////////////////////////////////////////////
-    function respondimo(element, url, background){    
+    function respondimo(element, url, background){
+        
+          var noWidth, noHeight;
+        
+        if (!background) {
+
+            if (
+                element.attr('width') == undefined
+                &&
+                parseInt(css(element).width || 0) === 0
+                &&
+                parseInt(element.css('min-width')) === 0
+                &&
+                parseInt(element.css('padding-left')) === 0
+                &&
+                parseInt(element.css('padding-right')) === 0
+            ) { var noWidth = true }
+            
+            if (
+                element.attr('height') == undefined
+                &&
+                parseInt(css(element).height || 0) === 0
+                &&
+                parseInt(element.css('min-height')) === 0
+                &&
+                parseInt(element.css('padding-top')) === 0
+                &&
+                parseInt(element.css('padding-bottom')) === 0
+            ) { var noHeight = true }
+        }
         
         var quality = element.closest('[data-rmo-quality]').data('rmoQuality') || RMO_DEFAULT_QUALITY
         var axis = element.closest('[data-rmo-axis]').data('rmoAxis') || 'x';
@@ -79,13 +89,18 @@
         var options = { q: quality };
         
         if (/^(x|horizontal|width|w)$/.test(axis)) {
-            var width = element.outerWidth();
-            options.w = getClosestValues(RMO_RESOLUTIONS, width ) || inputResolution;
+            var width =  element.outerWidth();
+            if(!noWidth) options.w = getClosestValues(RMO_RESOLUTIONS, width ) || inputResolution;
         }
         if(background || /^(y|vertical|height|h)$/.test(axis)) {
             var height = element.outerHeight();
-            options.h = getClosestValues(RMO_RESOLUTIONS, height ) || inputResolution;
+            if(!noHeight) options.h = getClosestValues(RMO_RESOLUTIONS, height ) || inputResolution;
         }
+        if(typeof options.w === 'undefined' && typeof options.h === 'undefined') {
+            options.w = 99999
+        }
+        
+        
         if(background) {
             options.size = size;
         }
@@ -142,5 +157,38 @@
         var a = document.createElement( 'a' ); a.innerHTML = html;
         return a.textContent;
     };
+    
+    function css(a) {
+        var sheets = document.styleSheets, o = {};
+        for (var i in sheets) {
+            var rules = sheets[i].rules || sheets[i].cssRules;
+            for (var r in rules) {
+                if (a.is(rules[r].selectorText)) {
+                    o = $.extend(o, css2json(rules[r].style), css2json(a.attr('style')));
+                }
+            }
+        }
+        return o;
+    }
+
+    function css2json(css) {
+        var s = {};
+        if (!css) return s;
+        if (css instanceof CSSStyleDeclaration) {
+            for (var i in css) {
+                for (var i = 0; i < css.length; i += 1) {
+                    s[css[i]] = css.getPropertyValue(css[i]);
+                }
+            }
+        } else if (typeof css == "string") {
+            css = css.split("; ");
+            for (var i in css) {
+                var l = css[i].split(": ");
+                s[l[0].toLowerCase()] = (l[1]);
+            }
+        }
+        return s;
+    }
+
     
 })();
